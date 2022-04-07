@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  USA Outline!
 // @author       cover - script, cover - image
-// @match        https://hot-potato.reddit.com/embed*
+// @match        https://rplace.tk/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @grant        none
 // ==/UserScript==
