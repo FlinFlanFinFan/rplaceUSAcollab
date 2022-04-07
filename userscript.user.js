@@ -10,10 +10,10 @@
 // ==/UserScript==
 if (window.top !== window.self) {
     window.addEventListener('load', () => {
-            document.getElementById("canvparent2").appendChild(
+      document.getElementById("canvparent2").appendChild(      
         (function () {
             const i = document.createElement("img");
-            i.src = "https://i.imgur.com/wALkAOl.png";
+            i.src = "https://raw.githubusercontent.com/tcoverst/rplaceUSAcollab/main/rplaceUSA.png";
             i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;";
             console.log(i);
             return i;
