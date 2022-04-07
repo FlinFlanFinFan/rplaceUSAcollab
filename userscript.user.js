@@ -8,17 +8,23 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @grant        none
 // ==/UserScript==
-if (window.top !== window.self) {
-    window.addEventListener('load', () => {
-      document.getElementById("canvparent2").appendChild(      
+window.addEventListener('load', () => {
+    document.getElementById("canvparent2").appendChild(
         (function () {
             const i = document.createElement("img");
             i.src = "https://raw.githubusercontent.com/tcoverst/rplaceUSAcollab/main/rplaceUSA.png";
-            i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;";
+            i.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 2000px;pointer-events: none;";
             console.log(i);
+            document.addEventListener("keydown", function(event) {
+                if(event.key == "F4"){
+                    if (i.style.display === "none") {
+                        i.style.display = "block";
+                    } else {
+                        i.style.display = "none";
+                    }
+                }
+            });
             return i;
         })())
 
-    }, false);
-
-}
+}, false);
